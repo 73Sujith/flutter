@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// https://api.flutter.dev/flutter/material/Card-class.html
+
 class CardTextCenter extends StatelessWidget {
   const CardTextCenter({super.key});
 
@@ -25,14 +27,14 @@ class CardTextCenter extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.red,
                       fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
+                      fontWeight: FontWeight.bold), //TextStyle
+                ), //Text
+              ), //Center
+            ), //Sizedbox
+          ), //Card
+        ), //Center
+      ), //Scaffold
       debugShowCheckedModeBanner: false,
-    );
+    ); //MaterialApp
   }
 }

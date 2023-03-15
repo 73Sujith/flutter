@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// https://api.flutter.dev/flutter/widgets/Column-class.html
+// https://api.flutter.dev/flutter/widgets/Row-class.html
+
 class RowColumn extends StatelessWidget {
   const RowColumn({super.key});
 
@@ -22,9 +25,9 @@ class RowColumn extends StatelessWidget {
                           color: Colors.green,
                           fontSize: 24,
                           fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
+                    ), //Text
+                  ), //Container
+                ), //Expanded
                 Expanded(
                   child: Container(
                     height: 200,
@@ -36,9 +39,9 @@ class RowColumn extends StatelessWidget {
                           color: Colors.red,
                           fontSize: 24,
                           fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
+                    ), //Text
+                  ), //Container
+                ), //Expanded
                 Expanded(
                   child: Container(
                     height: 200,
@@ -50,11 +53,11 @@ class RowColumn extends StatelessWidget {
                           color: Colors.yellow,
                           fontSize: 24,
                           fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+                    ), //Text
+                  ), //Container
+                ), //Expanded
+              ], //<widget>[]
+            ), //Row
             Expanded(
               child: Container(
                 color: Colors.yellow,
@@ -65,13 +68,13 @@ class RowColumn extends StatelessWidget {
                       color: Colors.red,
                       fontSize: 40,
                       fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+                ), //Text
+              ), //Contaienr
+            ), //Expanded
+          ], //<Widget>[]
+        ), //Column
+      ), //Scaffold
       debugShowCheckedModeBanner: false,
-    );
+    ); //MaterialApp
   }
 }

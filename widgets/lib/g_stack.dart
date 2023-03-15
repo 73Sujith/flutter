@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// https://api.flutter.dev/flutter/widgets/Stack-class.html
+
 class Stac extends StatelessWidget {
   const Stac({super.key});
 
@@ -14,22 +16,22 @@ class Stac extends StatelessWidget {
                 width: 100,
                 height: 100,
                 color: Colors.red,
-              ),
+              ), //Container
               Container(
                 width: 90,
                 height: 90,
                 color: Colors.green,
-              ),
+              ), //Container
               Container(
                 width: 80,
                 height: 80,
                 color: Colors.blue,
-              ),
-            ],
-          ),
-        ),
-      ),
+              ), //Container
+            ], //<Widget>[]
+          ), //Stack
+        ), //Center
+      ), //Scaffold
       debugShowCheckedModeBanner: false,
-    );
+    ); //MaterialApp
   }
 }

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'gesture_detector.dart';
-import 'package:widgets/grid_view.dart';
-import 'package:widgets/stack.dart';
-import 'package:widgets/list_view.dart';
-import 'card.dart';
-import 'row_column.dart';
-import 'container_text_center.dart';
+import 'f_gesture_detector.dart';
+import 'package:widgets/d_grid_view.dart';
+import 'package:widgets/g_stack.dart';
+import 'package:widgets/c_list_view.dart';
+import 'e_card.dart';
+import 'b_row_column.dart';
+import 'a_container_text_center.dart';
 
 void main() {
-  // runApp(const ContainerTextCenter());
+  runApp(const ContainerTextCenter());
   // runApp(const CardTextCenter());
   // runApp(const RowColumn());
   // runApp(const ListVi());
   // runApp(const GridVi());
   // runApp(const Stac());
-  runApp(const GestureDetectr());
+  // runApp(const GestureDetectr());
 }

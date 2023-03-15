@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// https://api.flutter.dev/flutter/widgets/GestureDetector-class.html
+
 void main() {}
 
 class GestureDetectr extends StatelessWidget {
@@ -10,7 +12,7 @@ class GestureDetectr extends StatelessWidget {
     return const MaterialApp(
       title: 'GestureDetector Example',
       home: MyHomePage(),
-    );
+    ); //MaterialApp
   }
 }
 
@@ -22,7 +24,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('GestureDetector Example'),
-      ),
+      ), //Appbar
       body: Center(
         child: GestureDetector(
           onTap: () {
@@ -39,12 +41,12 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
+                ), //TextStyle
+              ), //Text
+            ), //Center
+          ), //Container
+        ), //GestureDetector
+      ), //Center
+    ); //Scaffold
   }
 }
